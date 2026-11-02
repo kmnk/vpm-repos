@@ -16,6 +16,8 @@ VPM listing of kmnk's VRChat tools. Add it to VCC, ALCOM or vrc-get:
 
 Made from https://github.com/vrchat-community/template-package-listing. The "Build Repo Listing" workflow reads every release of the repositories in `githubRepos` of `source.json`, takes the attached `.zip` files that have `package.json` at their root, and publishes `index.json` to GitHub Pages.
 
+A repository in `githubRepos` must have at least one release: with none, the workflow fails (`ArgumentNullException` in `package-list-action`). Add a repository after its first release with a VPM zip.
+
 It runs when `source.json` changes on `main`. After releasing a new version of a package, run it by hand:
 
 ```
