@@ -5,6 +5,9 @@ on:
   push:
     branches: main
     paths: source.json
+  # 各パッケージの release を 1 日 1 回拾う。急ぐときは gh workflow run build-listing.yml -R kmnk/vpm-repos
+  schedule:
+    - cron: "17 18 * * *"
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
