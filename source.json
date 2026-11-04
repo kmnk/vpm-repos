@@ -14,7 +14,8 @@
     },
     "bannerUrl":"banner.png",
     "githubRepos":[
-        "kmnk/VRChat_LogStream"
+        "kmnk/VRChat_LogStream",
+        "kmnk/VRChat_FaceTrackingGenerator"
     ],
     "packages":[
     ]
